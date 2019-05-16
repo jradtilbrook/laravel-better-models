@@ -1,0 +1,30 @@
+{
+    "name": "healthengine/laravel-better-models",
+    "description": "Better model defaults for Laravel",
+    "keywords": ["laravel", "eloquent", "uuid", "chronos", "migration"],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jarryd Tilbrook",
+            "email": "jrad.tilbrook@gmail.com"
+        }
+    ],
+    "require": {
+        "healthengine/laravel-chronos": "^2.0",
+        "healthengine/laravel-uuid": "^1.0",
+        "illuminate/support": "~5.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "HealthEngine\\BetterModels\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "HealthEngine\\BetterModels\\ServiceProvider"
+            ]
+        }
+    }
+}
